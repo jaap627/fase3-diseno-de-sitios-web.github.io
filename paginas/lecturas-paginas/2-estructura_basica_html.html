@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de Sitios Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Página web OVI para la fase 3 del curso de Diseño de Sitios web">
+    <meta name="keywords" content="git, github, html5, css3">
+    
+    <link href="../../imagenes/favicon/favicon.ico" rel="icon" type="image/ico"/>
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <style type="text/css">
+        u{
+            color: #000000;
+        }
+        figure{
+	        display: block;
+	        transition: transform 0.3s ease-in-out 0.2s;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+	        margin-left: auto;
+	        margin-right: auto;
+        }
+        figure img{
+	        background: #333333;
+        }
+        figure figcaption{
+            color: #000000;
+	        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	        font-size: 0.75em;
+	        text-align: center;
+            margin-top: 3px;
+            font-style: inherit;
+            text-decoration-line: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        <a href="https://www.unad.edu.co/" target="_blank" rel="noopener noreferrer"><img src="../../imagenes/logos/logo_unad-630x133.png" alt="Logo UNAD" id="logo" width="" height="70"/></a>     
+    </h1>
+
+    <h2 class="titulo">Diseño de Sitios Web</h2>
+
+    <nav id="menu">
+        <ul>
+            <li id="inicio"><a href="../../index.html">Inicio</a></li>
+            <li id="lecturas"><a href="../../paginas/lecturas.html">Lecturas</a></li>
+            <li id="multimedia"><a href="../../paginas/multimedia.html">Multimedia</a></li>
+            <li id="actividades"><a href="../../paginas/actividades.html">Actividades</a></li>
+            <li id="autores"><a href="../../paginas/autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor -->
+    <section id="contenedor">
+        <header>
+            <article>
+                <h3 class="subtitulo_1">El esqueleto básico de HTML</h3>
+                    
+                <p class="parrafo_1">
+                    Para crear un verdadero documento HTML comenzará con tres elementos contenedores:
+                    <br>
+                    <ul class="lista_1">
+                        <li>&lt;html&gt;</li>
+                        <li>&lt;head&gt;</li>
+                        <li>&lt;body&gt;</li>
+                    </ul>                   
+                </p>
+
+                <figure>
+                    <img src="../../imagenes/nav_menu/lecturas/2-estructura_basica_html/cuerpo/estructura_basica-800x380.jpg" alt="Estructura HTML" width="600" height="">
+                    <a href="https://disenowebakus.net/domine-html-y-dhtml-primeros-pasos.php" target="_blank" rel="noopener noreferrer"><figcaption>Fuente: https://disenowebakus.net/domine-html-y-dhtml-primeros-pasos.php</figcaption></a>
+                </figure>
+
+                <p class="parrafo_1">
+                    Estas tres etiquetas se combinan para describir la estructura básica del sitio web:
+                    <br><br>
+                    <b>&lt;html&gt;:</b> Este elemento envuelve todo el contenido de la página (excepto la DTD)
+                    <br><br>
+                    <b>&lt;head&gt;:</b> Este elemento designa la parte de encabezado del documento. Puede incluir 
+                    información opcional sobre la página Web, como puede ser el título (el navegador lo muestra en 
+                    la barra de título), palabras clave de búsqueda opcionales y una hoja de estilo opcional.
+                    <br><br>
+                    <b>&lt;body&gt;:</b> Este elemento alberga el contenido de su página Web, es decir, aquello 
+                    que queremos que aparezca en el área de navegación del navegador.
+                </p>
+
+                <h4 class="referencias">Referencias</h4>
+
+                <p class="parrafo_1"></p>
+                    <ul class="lista_1">
+                        <li>
+                            Delgado, H. (2019).  <i>Estructura básica de una página Web - html, head y body.</i> disenowebakus.net [Sitio web]. 
+                            Recuperado de: <a href="https://disenowebakus.net/domine-html-y-dhtml-primeros-pasos.php" target="_blank" rel="noopener noreferrer"><u>https://disenowebakus.net/domine-html-y-dhtml-primeros-pasos.php</u></a>
+                        </li>                      
+                    </ul>
+                </p>
+                
+                <a href="../lecturas.html"><img class="boton_volver" 
+                    src="../../imagenes/botones/Volver atras/azul_vacio-400x104.png" alt="Volver a lecturas" width="180" height="47">
+                </a>
+            </article> 
+        </header>
+    </section>
+    <!-- Fin contenedor -->
+
+    <!-- Twitter Widget -->
+    <aside id="twitter_unad">
+        <a class="twitter-timeline" data-width="" data-height="1000" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>     
+    </aside>
+    <!-- Fin Twitter Widget -->
+
+    <footer>
+        <p class="pie_pagina">2019 © Universidad Nacional Abierta y a Distancia <br> UNAD</p>      
+    </footer>
+</body>
+</html>

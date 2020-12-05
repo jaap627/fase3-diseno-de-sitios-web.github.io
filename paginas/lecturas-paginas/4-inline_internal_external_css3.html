@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de Sitios Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Página web OVI para la fase 3 del curso de Diseño de Sitios web">
+    <meta name="keywords" content="git, github, html5, css3">
+    
+    <link href="../../imagenes/favicon/favicon.ico" rel="icon" type="image/ico"/>
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <style type="text/css">
+        u{
+            color: #000000;
+        }
+        figure{
+	        display: block;
+	        transition: transform 0.3s ease-in-out 0.2s;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+	        margin-left: auto;
+	        margin-right: auto;
+        }
+        figure img{
+	        background: #333333;
+        }
+        figure figcaption{
+            color: #000000;
+	        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	        font-size: 0.75em;
+	        text-align: center;
+            margin-top: 3px;
+            font-style: inherit;
+            text-decoration-line: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        <a href="https://www.unad.edu.co/" target="_blank" rel="noreferrer noopener"><img src="../../imagenes/logos/logo_unad-630x133.png" alt="Logo UNAD" id="logo" width="" height="70"/></a>     
+    </h1>
+
+    <h2 class="titulo">Diseño de Sitios Web</h2>
+
+    <nav id="menu">
+        <ul>
+            <li id="inicio"><a href="../../index.html">Inicio</a></li>
+            <li id="lecturas"><a href="../../paginas/lecturas.html">Lecturas</a></li>
+            <li id="multimedia"><a href="../../paginas/multimedia.html">Multimedia</a></li>
+            <li id="actividades"><a href="../../paginas/actividades.html">Actividades</a></li>
+            <li id="autores"><a href="../../paginas/autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor -->
+    <section id="contenedor">
+        <header>
+            <article>
+                <h3 class="subtitulo_1">Estilos externos, internos y en línea</h3>
+                    
+                <p class="parrafo_1">
+                    Hay tres formas diferentes de implementar estilos en nuestras páginas web: estilos 
+                    en línea (Inline), hojas de estilo internas y hojas de estilo externas.
+                    <br><br>                       
+                </p>
+                   
+                <h4 class="subtitulo_2">Estilos Inline</h4>
+
+                <p class="parrafo_1">
+                    Los estilos en línea o inline son el tipo de estilo menos flexible para implementar. 
+                    También rompen la regla cardinal de nunca usar HTML para agregar estilo a sus páginas. 
+                    Puede aplicar estilos en línea a cualquier etiqueta, por ejemplo:                       
+                </p>
+
+                <figure>
+                    <img src="../../imagenes/nav_menu/lecturas/4-inline_internal_external_css3/cuerpo/css_inline-550x95.jpg" alt="css Inline" width="550" height="95">
+                    <a href="https://www.beginnersguidetohtml.com/guides/css/styles/external-internal-inline-styles" target="_blank" rel="noopener noreferrer"><figcaption>Fuente: https://www.beginnersguidetohtml.com/guides/css/styles/external-internal-inline-styles</figcaption></a>
+                </figure>
+
+                <p class="parrafo_1">
+                    Este código coloreará el texto del párrafo en rojo. Sin embargo, sería mucho mejor 
+                    separar este estilo en una hoja de estilo y luego simplemente asignar a la etiqueta 
+                    de párrafo un atributo relevante, como <code>&lt;p class="red"&gt;</code>.                      
+                </p>
+
+                <p class="parrafo_1">
+                    De este ejemplo debería quedar claro que los estilos en línea están lejos de ser 
+                    ideales. Esencialmente no son diferentes de la antigua forma de afectar el estilo 
+                    usando código HTML, y sufre el mismo inconveniente importante: que si desea cambiar 
+                    las propiedades del estilo, tendría que editar cada una de las instancias del estilo 
+                    en cada página de su sitio web. Por lo tanto, los estilos inline deben evitarse a 
+                    toda costa.
+                    <br><br>                     
+                </p>
+                
+                <h4 class="subtitulo_2">Estilos Internos</h4>
+
+                <p class="parrafo_1">
+                    Con las hojas de estilo internas, los estilos de una página web se especifican en la 
+                    parte superior del código de la página, dentro de la etiqueta <code>&lt;head&gt;</code> 
+                    de la página. Por ejemplo, puede usar el siguiente código para especificar propiedades 
+                    para sus etiquetas <code>&lt;h1&gt;</code> y <code>&lt;p&gt;</code>                      
+                </p>
+
+                <figure>
+                    <img src="../../imagenes/nav_menu/lecturas/4-inline_internal_external_css3/cuerpo/css_interno-550x191.jpg" alt="css Internal" width="550" height="191">
+                    <a href="https://www.beginnersguidetohtml.com/guides/css/styles/external-internal-inline-styles" target="_blank" rel="noopener noreferrer"><figcaption>Fuente: https://www.beginnersguidetohtml.com/guides/css/styles/external-internal-inline-styles</figcaption></a>
+                </figure>
+
+                <p class="parrafo_1">
+                    Luego puede aplicar estos estilos a cualquier texto dentro de su página, y todos tendrán 
+                    la apariencia especificada. El problema con este tipo de estilo es que aún necesita 
+                    declarar todos sus estilos en cada página de su sitio web. Nuevamente, esto hace que 
+                    pueda llevar mucho tiempo realizar cambios a gran escala en varias páginas web.
+                    <br><br>                     
+                </p>
+
+                <h4 class="subtitulo_2">Estilos Externos</h4>
+
+                <p class="parrafo_1">
+                    Las hojas de estilo externas son realmente el santo grial de los estilos. Le permiten 
+                    poner toda su información de estilo en un archivo CSS completamente separado. Luego, 
+                    simplemente puede hacer referencia a este archivo desde cada página web, y el contenido 
+                    de la página tendrá el estilo correspondiente. La gran ventaja obvia de este método es 
+                    que solo necesita cambiar un estilo en su archivo de hoja de estilo, y los cambios irán 
+                    en cascada por el resto de su sitio web.                      
+                </p>
+
+                <p class="parrafo_1">
+                    Los archivos CSS se pueden crear utilizando cualquier editor de texto, de la misma 
+                    manera que crearía un archivo HTML. La única diferencia es que debe guardar el archivo 
+                    con la extensión <code>.css</code>. Su hoja de estilo puede contener tantas declaraciones 
+                    de estilo como desee.                     
+                </p>
+
+                <p class="parrafo_1">
+                    Para incluir una hoja de estilo externa en una de sus páginas web, debe agregar una 
+                    etiqueta <code>&lt;link&gt;</code> dentro de la etiqueta <code>&lt;head&gt;</code> de su 
+                    página. El siguiente ejemplo se vincularía a una hoja de estilo llamada <code>&lt;stylesheet.css&gt;</code>:                     
+                </p>
+
+                <figure>
+                    <img src="../../imagenes/nav_menu/lecturas/4-inline_internal_external_css3/cuerpo/css_externo-558x98.jpg" alt="css External" width="558" height="98">
+                    <a href="https://www.beginnersguidetohtml.com/guides/css/styles/external-internal-inline-styles" target="_blank" rel="noopener noreferrer"><figcaption>Fuente: https://www.beginnersguidetohtml.com/guides/css/styles/external-internal-inline-styles</figcaption></a>
+                </figure>
+
+                <p class="parrafo_1">
+                    Luego marcaría su HTML como normal con etiquetas como <code>&lt;p&gt;</code> y 
+                    <code>&lt;h1&gt;</code>, y la hoja de estilo proporcionará los estilos.                     
+                </p>
+
+                <p class="parrafo_1">
+                    Debe quedar claro que las hojas de estilo externas ofrecen la mayor cantidad en 
+                    términos de flexibilidad y facilidad de uso, y también proporcionan la separación 
+                    más completa de HTML y CSS de las tres opciones.                   
+                </p>
+
+                <h4 class="referencias">Referencias</h4>
+
+                <p class="parrafo_1"></p>
+                    <ul class="lista_1">
+                        <li>
+                            Williams, P. (s.f). <i>External, Internal and Inline CSS Styles. </i> beginnersguidetohtml.com [Sitio web]. 
+                            Recuperado de: <a href="https://www.beginnersguidetohtml.com/guides/css/styles/external-internal-inline-styles" target="_blank" rel="noopener noreferrer"><u>https://www.beginnersguidetohtml.com/guides/css/styles/external-internal-inline-styles</u></a>
+                        </li>                      
+                    </ul>
+                </p>
+
+                <a href="../lecturas.html"><img class="boton_volver" 
+                    src="../../imagenes/botones/Volver atras/azul_vacio-400x104.png" alt="Volver a lecturas" width="180" height="47">
+                </a>
+            </article>
+        </header>
+    </section>
+    <!-- Fin contenedor -->
+
+    <!-- Twitter Widget -->
+    <aside id="twitter_unad">
+        <a class="twitter-timeline" data-width="" data-height="1000" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+    </aside>
+    <!-- Fin Twitter Widget -->
+
+    <footer>
+        <p class="pie_pagina">2019 © Universidad Nacional Abierta y a Distancia <br> UNAD</p>      
+    </footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de Sitios Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Página web OVI para la fase 3 del curso de Diseño de Sitios web">
+    <meta name="keywords" content="git, github, html5, css3">
+    
+    <link href="../imagenes/favicon/favicon.ico" rel="icon" type="image/ico"/>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style type="text/css">
+        #contenedor article{
+            text-align: center;
+        }
+        .autor{
+            display: inline-block;
+            text-align: center;
+            background: #ffffff;
+            padding: 4px;
+            box-shadow: #000000 2px 2px 5px;
+            width: 400px;
+        }
+        .autor img{
+            margin-top: 10px;
+            padding: 4px;
+	        background: #000000;
+	        box-shadow: #000000 2px 2px 5px;
+	        text-align: center;
+        }
+        .autor figcaption{
+            font-weight: bold;
+            font-size: 1.25em;
+        }
+        .autor p{
+            text-align: center;
+        }
+        @media(max-width: 1800px){
+        }
+
+        @media(max-width: 800px){
+            .autor{
+                max-width: 100%;
+                background: #aeddf1;
+                box-shadow: none;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        <a href="https://www.unad.edu.co/" target="_blank" rel="noopener noreferrer"><img src="../imagenes/logos/logo_unad-630x133.png" alt="Logo UNAD" id="logo" width="" height="70"/></a>     
+    </h1>
+
+    <h2 class="titulo">Diseño de Sitios Web</h2>
+
+    <nav id="menu">
+        <ul>
+            <li id="inicio"><a href="../index.html">Inicio</a></li>
+            <li id="lecturas"><a href="../paginas/lecturas.html">Lecturas</a></li>
+            <li id="multimedia"><a href="../paginas/multimedia.html">Multimedia</a></li>
+            <li id="actividades"><a href="../paginas/actividades.html">Actividades</a></li>
+            <li id="autores"><a href="../paginas/autor.html">Autor</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor -->
+    <section id="contenedor">
+        <header>
+            <article>
+                <div class="autor">
+                    <h4 class="subtitulo_1_centro">Autor del OVI</h4>
+                    
+                    <figure>
+                        <img src="../imagenes/nav_menu/autor/photo/foto-98x99.JPG" alt="Foto" width="98" height="99">
+                        <figcaption>John Arias</figcaption>
+                    </figure>
+                    
+                    <p class="parrafo_1">
+                        <b>Código:</b> 1.113.694.924
+                        <br>
+                        <b>Programa:</b> Ingeniería de Sistemas
+                        <br>
+                        <b>Correo electrónico:</b> jaariaspar@unadvirtual.edu.co
+                        <br>
+                        <b>Skype:</b> johnariasparra7   
+                    </p>
+                </div>
+            </article>
+                    
+        </header>
+    </section>
+    <!-- Fin contenedor -->
+
+    <!-- Twitter Widget -->
+    <aside id="twitter_unad">
+        <a class="twitter-timeline" data-width="" data-height="1000" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>     
+    </aside>
+    <!-- Fin Twitter Widget -->
+
+    <footer>
+        <p class="pie_pagina">2019 © Universidad Nacional Abierta y a Distancia <br> UNAD</p>      
+    </footer>
+</body>
+</html>

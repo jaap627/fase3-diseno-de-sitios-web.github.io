@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de Sitios Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Página web OVI para la fase 3 del curso de Diseño de Sitios web">
+    <meta name="keywords" content="git, github, html5, css3">
+    
+    <link href="../../imagenes/favicon/favicon.ico" rel="icon" type="image/ico"/>
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <style type="text/css">
+        u{
+            color: #000000;
+        }
+        span{
+            font-weight: 700;
+        }
+        table{
+            margin-top: 20px;
+        }
+        tbody{
+            border: #252525 2px solid;
+        }
+        tr{
+            border: #252525 2px solid;
+        }
+        th{
+            background-color: #24752481;
+            border: #252525 2px solid;
+            padding: 20px;
+            font-weight: bold;
+        }
+        td{
+            background-color: #ffffff;
+            border: #252525 2px solid;
+            padding-top: 10px;
+            padding-bottom: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        figure{
+	        display: block;
+	        transition: transform 0.3s ease-in-out 0.2s;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+	        margin-left: auto;
+	        margin-right: auto;
+        }
+        figure img{
+	        background: #333333;
+        }
+        figure figcaption{
+            color: #000000;
+	        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	        font-size: 0.75em;
+	        text-align: center;
+            margin-top: 3px;
+            font-style: inherit;
+            text-decoration-line: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        <a href="https://www.unad.edu.co/" target="_blank" rel="noopener noreferrer"><img src="../../imagenes/logos/logo_unad-630x133.png" alt="Logo UNAD" id="logo" width="" height="70"/></a>     
+    </h1>
+
+    <h2 class="titulo">Diseño de Sitios Web</h2>
+
+    <nav id="menu">
+        <ul>
+            <li id="inicio"><a href="../../index.html">Inicio</a></li>
+            <li id="lecturas"><a href="../../paginas/lecturas.html">Lecturas</a></li>
+            <li id="multimedia"><a href="../../paginas/multimedia.html">Multimedia</a></li>
+            <li id="actividades"><a href="../../paginas/actividades.html">Actividades</a></li>
+            <li id="autores"><a href="../../paginas/autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor -->
+    <section id="contenedor">
+        <header>
+            <article>
+                <h3 class="subtitulo_1">Propiedades básicas de CSS</h3>
+                
+                <p class="parrafo_1">
+                    A continuación se describen las principales propiedades de CSS:
+                    <br>                     
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Font-family:</strong><br>
+                    Define la familia tipográfica. Es conveniente poner una lista de dos o 
+                    tres tipografías separadas por coma, porque si el usuario no tiene instalada la tipografía 
+                    que nosostros elegimos, el navegador opta por mostrar la siguiente que debería ser una 
+                    similar, si tampoco la tiene instalada, mostrará la tipografía por defecto.                      
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Font-size:</strong><br>
+                    Define el tamaño de la fuente y el valor se puede escribir en  
+                    <span class="red">pixels</span> o en <span class="red">ems.</span> En este momento se 
+                    recomienda usar ems. Los dos son valores relativos, el pixel es un valor relativo a la 
+                    resolución de la pantalla, pero el em es relativo al tamaño de la fuente definida por el 
+                    usuario. Si el usuario no cambió la configuración, el valor por defecto de los textos en 
+                    todos los navegadores es de 16px. <span class="red">Entonces 1em = 16px.</span>
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Color:</strong><br>
+                    Define el color de la tipografía. Los colores se pueden escribir de 3 formas distinas: con 
+                    sistema <span class="red">hexadecimal,</span> por ejemplo: #FF0000 (es rojo). Con los 
+                    <span class="red">nombres</span> de los colores (más limitado) por ejemplo: black, red, green. 
+                    O usando <span class="red">RGB</span>, esta paleta permite gregar el canal alfa para hacer 
+                    transparencias.                      
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Width:</strong><br>
+                    Define el <span class="red">ancho</span> de un elemento, el valor se puede escribir en 
+                    pixels, ems o porcentaje.                     
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Max-width o min-width:</strong><br>
+                    Definen el ancho máximo o mínimo de un elemento. Muy importante en sitios adaptables.                     
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Height:</strong><br>
+                    Define el <span class="red">alto</span> de un elemento, el valor se puede escribir en pixels, 
+                    ems o porcentaje.                    
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Max-height o min-height:</strong><br>
+                    Definen el alto máximo o mínimo de un elemento. Muy importante en sitios adaptables                   
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Padding</strong><br>
+                    Es la distancia desde el borde de un elemento hasta su contenido.                   
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Margin:</strong><br>
+                    Es la distancia entre un elemento y otro (desde el borde de un elemento hacia afuera)                 
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Border:</strong><br> 
+                    Define el borde de un elemento, su color, su estilo y grosor.                 
+                </p>
+
+                <p class="parrafo_1">
+                    <strong>Background:</strong><br>
+                    Define los fondos de un objeto. El fondo puede ser una <span class="red">imagen</span> o un 
+                    <span class="red">color.</span> El color puede ser pleno o degradado. La imagen se puede 
+                    repetir formando una trama (es lo que ocurre por defecto) o se puede especificar que no 
+                    repita y que se coloque en determinada posición.
+                    <br><br>                  
+                </p>
+
+                <p class="parrafo_1">
+                    <b>En la siguiente tabla se enseñan otras de las propiedades básicas de CSS:</b>                      
+                </p>
+                
+                <table>
+                        <tbody>
+                      <tr>
+                          <th>Propiedad</th>
+                          <th>Descripcion</th>
+                          <th>Valores</th>
+                        </tr>
+                        <tr>
+                          <td>line-height</td>
+                          <td>Especifica la altura de una línea</td>
+                          <td>normal, <i>number,</i> <i>%,</i> initial, inherit,</td>
+                        </tr>
+                        <tr>
+                          <td>letter-spacing</td>
+                          <td>Aumenta o disminuye el espacio entre caracteres 
+                            <br>  
+                            en un texto</td>
+                          <td>normal, <i>length,</i> initial, inherit</td>
+                        </tr>
+                        <tr>
+                          <td>text-align</td>
+                          <td>Especifica la alineación horizontal del texto en 
+                            <br>  
+                            un elemento</td>
+                          <td>left, right, center, justify, initial, inherit</td>
+                        </tr>
+                        <tr>
+                          <td>font-style</td>
+                          <td>Especifica el estilo de fuente para un texto</td>
+                          <td>normal, italic, oblique, initial, inherit</td>
+                        </tr>
+                        <tr>
+                          <td>font-weight</td>
+                          <td>Establece qué tan grueso o delgado se deben mostrar 
+                            <br>  
+                            los caracteres en el texto</td>
+                          <td>normal, bold, bolder, lighter, 100, 200, 300, 
+                              <br>
+                              400, 500, 600, 700, 800, 900, initial, inherit</td>
+                        </tr>
+                        <tr>
+                          <td>float</td>
+                          <td>Especifica como debe flotar un elemento</td>
+                          <td>none, left, right, initial, inherit</td>
+                        </tr>
+                      </tbody>
+                      </table>
+               
+                <h4 class="referencias">Referencias</h4>
+
+                <p class="parrafo_1"></p>
+                    <ul class="lista_1">
+                        <li>
+                            Chuburu, L. (2018). <i>Principales propiedades CSS.</i> laurachuburu.com.ar [Sitio web]. Recuperado de: 
+                            <a href="https://www.laurachuburu.com.ar/tutoriales/propiedades-css.php" target="_blank" rel="noopener noreferrer"><u>https://www.laurachuburu.com.ar/tutoriales/propiedades-css.php</u></a>
+                        </li>  
+                        <li>
+                            W3schools (2019). <i>CSS properties: line-height, letter-spacing, text-align, font-syle, font-weight, 
+                            float.</i> w3schools.com [Sitio web]. Recuperado de: <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer"><u>https://www.w3schools.com/</u></a>
+                        </li>                           
+                    </ul>
+                </p>
+
+                <a href="../lecturas.html"><img class="boton_volver" 
+                    src="../../imagenes/botones/Volver atras/azul_vacio-400x104.png" alt="Volver a lecturas" width="180" height="47">
+                </a>
+            </article>
+        </header>
+    </section>
+    <!-- Fin contenedor -->
+
+    <!-- Twitter Widget -->
+    <aside id="twitter_unad">
+        <a class="twitter-timeline" data-width="" data-height="1000" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+    </aside>
+    <!-- Fin Twitter Widget -->
+
+    <footer>
+        <p class="pie_pagina">2019 © Universidad Nacional Abierta y a Distancia <br> UNAD</p>      
+    </footer>
+</body>
+</html>

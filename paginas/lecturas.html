@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de Sitios Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Página web OVI para la fase 3 del curso de Diseño de Sitios web">
+    <meta name="keywords" content="git, github, html5, css3">
+    
+    <link href="../imagenes/favicon/favicon.ico" rel="icon" type="image/ico"/>
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style type="text/css">
+        figure{
+	        display: inline-block;
+	        padding: 50px;
+	        transition: transform 0.3s ease-in-out 0.2s;
+	        text-align: center;
+	        margin-left: auto;
+	        margin-right: auto;
+        }
+        figure:hover{
+	        transform: scale(1.1);
+	        box-shadow: none;
+        }
+        figure img{
+	        padding: 4px;
+	        background: #333333;
+	        border-radius: 18px;
+	        box-shadow:#666 5px 5px 5px;
+	        text-align: center;
+        }
+        figure figcaption{
+	        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	        font-size: 1.25em;
+	        text-align: center;
+	        margin-top: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        <a href="https://www.unad.edu.co/" target="_blank" rel="noopener noreferrer"><img src="../imagenes/logos/logo_unad-630x133.png" alt="Logo UNAD" id="logo" width="" height="70"/></a>     
+    </h1>
+
+    <h2 class="titulo">Diseño de Sitios Web</h2>
+
+    <nav id="menu">
+        <ul>
+            <li id="inicio"><a href="../index.html">Inicio</a></li>
+            <li id="lecturas"><a href="../paginas/lecturas.html">Lecturas</a></li>
+            <li id="multimedia"><a href="../paginas/multimedia.html">Multimedia</a></li>
+            <li id="actividades"><a href="../paginas/actividades.html">Actividades</a></li>
+            <li id="autores"><a href="../paginas/autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor -->
+    <section id="contenedor">
+        <header>
+            <article>
+                <h4 class="subtitulo_2_centro">A continuación se muestran los temas de lectura:</h4>
+
+                <figure>
+                    <a href="../paginas/lecturas-paginas/1-githubpages.html">
+                        <img src="../imagenes/nav_menu/lecturas/1-githubpages/miniatura/githubpages-500x300.jpg" alt="GitHub Pages" width="500" height="300">
+                        <figcaption>1. GitHub Pages</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="../paginas/lecturas-paginas/2-estructura_basica_html.html">
+                        <img src="../imagenes/nav_menu/lecturas/2-estructura_basica_html/miniatura/Estructura_basica_de_un_documento_html-704x413.jpg" alt="Estructura HTML" width="500" height="300">
+                        <figcaption>2. Estructura básica HTML</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="../paginas/lecturas-paginas/3-modelo_de_caja.html">
+                        <img src="../imagenes/nav_menu/lecturas/3-modelo_caja/miniatura/modelo_caja-482x317.jpg" alt="Modelo de Caja" width="500" height="300">
+                        <figcaption>3. Modelo de Caja</figcaption>
+                    </a>
+                </figure>
+
+                <figure>
+                    <a href="../paginas/lecturas-paginas/4-inline_internal_external_css3.html">
+                        <img src="../imagenes/nav_menu/lecturas/4-inline_internal_external_css3/miniatura/CSS_inlineinternalexternal_820x400.jpg" alt="Estilos CSS3" width="500" height="300">
+                        <figcaption>4. CSS3: Estilos Internos y Externos</figcaption>
+                    </a>
+                </figure>
+            
+                <figure>
+                    <a href="../paginas/lecturas-paginas/5-propiedades_basicas_css.html">
+                        <img src="../imagenes/nav_menu/lecturas/5-propiedades_basicas_css/miniatura/conceptos_basicos_css_700x300.png" alt="Propiedades básicas CSS" width="500" height="300">
+                        <figcaption>5. Propiedades básicas de CSS</figcaption>
+                    </a>
+                </figure>
+            </article>   
+        </header>
+    </section>
+    <!-- Fin contenedor -->
+
+    <!-- Twitter Widget -->
+    <aside id="twitter_unad">
+        <a class="twitter-timeline" data-width="" data-height="1000" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    
+    </aside>
+    <!-- Fin Twitter Widget -->
+
+    <footer>
+        <p class="pie_pagina">2019 © Universidad Nacional Abierta y a Distancia <br> UNAD</p>      
+    </footer>
+</body>
+</html>

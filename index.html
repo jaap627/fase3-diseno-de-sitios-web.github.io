@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de Sitios Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Página web OVI para la fase 3 del curso de Diseño de Sitios web">
+    <meta name="keywords" content="git, github, html5, css3">
+
+    <link href="imagenes/favicon/favicon.ico" rel="icon" type="image/ico"/>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style type="text/css">
+        #contador_visitas{
+            width: 10%;
+            background: #ffffff;
+	        float: right;
+            text-align: right;
+        }
+        #contador_visitas p{
+	        color: #ff1e00;
+	        font-weight: bold;
+	        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        	padding-right: 8px;
+	        font-style: italic;
+        }
+        #contador_visitas img{
+	        padding-right: 16px;
+        }
+        @media(max-width: 1800px){
+        }
+        @media(max-width: 800px){
+            #contador_visitas{
+                width: 100%;
+                float: none;
+                padding-right: 0px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        <a href="https://www.unad.edu.co/" target="_blank" rel="noopener noreferrer"><img src="imagenes/logos/logo_unad-630x133.png" alt="Logo UNAD" id="logo" width="" height="70"/></a>     
+    </h1>
+
+    <!-- Contador de visitas -->
+    <div id="contador_visitas">
+        <p>Contador de visitas</p>        
+        <a href="http://www.websmultimedia.com/contador-de-visitas-gratis" target="_blank" rel="noopener noreferrer">
+            <img style="border: 0px solid; display: inline;" target="_blank" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=273384">
+        </a>
+    </div>
+    <!-- Fin Contador de visitas -->  
+
+    <h2>Diseño de Sitios Web</h2>
+    
+    <nav id="menu">
+        <ul>
+            <li id="inicio"><a href="index.html">Inicio</a></li>
+            <li id="lecturas"><a href="paginas/lecturas.html">Lecturas</a></li>
+            <li id="multimedia"><a href="paginas/multimedia.html">Multimedia</a></li>
+            <li id="actividades"><a href="paginas/actividades.html">Actividades</a></li>
+            <li id="autores"><a href="paginas/autor.html">Autor</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor -->
+    <section id="contenedor">
+        <header>
+            <article>
+                <h3 class="subtitulo_1">OVI - Diseño de sitios web</h3>
+            
+                <img class="img_derecha" src="imagenes/index/html-css_675x325.jpg" alt="html-css" width="500" height="">
+
+                <p class="parrafo_1">
+                    Abordar temáticas introductorias referentes al 
+                    diseño web. El objetivo principal de este Objeto Virtual de Información (OVI) es adquirir nuevos 
+                    saberes y conocimientos alusivos a las temáticas sobre diseños de sitios web, GIT/GITHUB, HTML5 y CSS3.
+                    <br><br>
+                </p>
+
+                <h4 class="subtitulo_2">Objetivos específicos:</h4>
+
+                <p class="parrafo_1">
+                    <ul class="lista_1">
+                        <li>Aprender a usar el servicio gratuito de GitHub Pages.</li>
+                        <li>Fortalecer conocimientos sobre la estructura básica de HTML5.</li>
+                        <li>Comprender el comportamiento del Modelo de Caja en sitios web</li>
+                        <li>Adquirir conocimientos sobre los tipos de estilos en CSS3.</li>
+                        <li>Conocer las propiedades básicas de CSS.</li>
+                    </ul>
+                </p>
+            </article>    
+        </header>
+    </section> 
+    <!-- Fin contenedor -->
+
+    <!-- Twitter Widget -->
+    <aside id="twitter_unad">
+        <a class="twitter-timeline" data-width="" data-height="1000" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
+    </aside>
+    <!-- Fin Twitter Widget -->
+
+    <footer>
+        <p class="pie_pagina">2019 © Universidad Nacional Abierta y a Distancia <br> UNAD</p>      
+    </footer>
+</body>
+</html>

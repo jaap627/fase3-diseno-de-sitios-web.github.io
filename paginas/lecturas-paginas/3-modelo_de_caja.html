@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño de Sitios Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Página web OVI para la fase 3 del curso de Diseño de Sitios web">
+    <meta name="keywords" content="git, github, html5, css3">
+    
+    <link href="../../imagenes/favicon/favicon.ico" rel="icon" type="image/ico"/>
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <style type="text/css">
+        u{
+            color: #000000;
+        }
+        figure{
+	        display: block;
+	        transition: transform 0.3s ease-in-out 0.2s;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+	        margin-left: auto;
+	        margin-right: auto;
+        }
+        figure img{
+	        background: #333333;
+        }
+        figure figcaption{
+            color: #000000;
+	        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	        font-size: 0.75em;
+	        text-align: center;
+            margin-top: 3px;
+            font-style: inherit;
+            text-decoration-line: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>
+        <a href="https://www.unad.edu.co/" target="_blank" rel="noopener noreferrer"><img src="../../imagenes/logos/logo_unad-630x133.png" alt="Logo UNAD" id="logo" width="" height="70"/></a>     
+    </h1>
+
+    <h2 class="titulo">Diseño de Sitios Web</h2>
+
+    <nav id="menu">
+        <ul>
+            <li id="inicio"><a href="../../index.html">Inicio</a></li>
+            <li id="lecturas"><a href="../../paginas/lecturas.html">Lecturas</a></li>
+            <li id="multimedia"><a href="../../paginas/multimedia.html">Multimedia</a></li>
+            <li id="actividades"><a href="../../paginas/actividades.html">Actividades</a></li>
+            <li id="autores"><a href="../../paginas/autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Contenedor -->
+    <section id="contenedor">
+        <header>
+            <article>
+                <h3 class="subtitulo_1">Modelo de Caja CSS</h3>
+                    
+                <p class="parrafo_1">
+                    Todos los elementos HTML se pueden representar como cuadros rectangulares. En CSS, el 
+                    término “Modelo de Caja” (Box Model en ingles), se usa cuando se habla de diseño y esquemas.  
+                    El Modelo de Caja CSS es esencialmente un cuadro que envuelve cada elemento HTML. Consiste 
+                    en: márgenes, bordes, relleno y el contenido. 
+                    <br><br>
+                    La siguiente imagen ilustra el modelo de caja:                      
+                </p>
+
+                <figure>
+                    <img src="../../imagenes/nav_menu/lecturas/3-modelo_caja/cuerpo/box_model_w3s-1084x411.jpg" alt="Box Model w3s" width="1000" height="">
+                    <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank" rel="noopener noreferrer"><figcaption>Fuente: https://www.w3schools.com/css/css_boxmodel.asp</figcaption></a>
+                </figure>
+
+                <p class="parrafo_1">
+                        El Modelo de Caja es un contenedor que contiene múltiples propiedades. Se utiliza para crear 
+                        el diseño de páginas web. Se puede utilizar como un kit de herramientas para personalizar el 
+                        diseño de diferentes elementos. Tiene múltiples propiedades en CSS. Algunos de ellos se 
+                        dan a continuación:
+                    <br>
+                    <ul class="lista_1">
+                        <li>Contenido (Content)</li>
+                        <li>Relleno (Padding)</li>
+                        <li>Bordes (Borders)</li>
+                        <li>Márgenes (Margins)</li>
+                    </ul>
+                    <br>
+                </p>
+
+                <p class="parrafo_1">
+                        Explicación de las diferentes partes:
+                        <br><br>
+                        <b>Content:</b> El contenido del cuadro. Esta área consta de contenido como texto, imagen u 
+                        otro contenido multimedia. Está limitado por el borde del contenido y sus dimensiones están 
+                        dadas por el ancho y la altura del cuadro de contenido.
+                        <br><br>
+                        <b>Padding:</b> Incluye el relleno del elemento. Esta área es en realidad el espacio que 
+                        existe alrededor del área de contenido y el área del borde. El relleno (padding) es transparente.
+                        <br><br>
+                        <b>Border:</b> Es el área entre el relleno y el margen de la caja. Sus dimensiones están dadas 
+                        por el ancho y la altura del borde.
+                        <br><br>
+                        <b>Margin:</b> Es el área fuera del borde. El margen es transparente y es útil para separar 
+                        el elemento de sus vecinos.
+                        <br><br>
+                        El modelo de caja nos permite agregar un borde alrededor de los elementos y definir el espacio entre éstos. 
+                    </p>
+
+                <figure>
+                    <img src="../../imagenes/nav_menu/lecturas/3-modelo_caja/cuerpo/modelo_de_caja-1056x709.jpg" alt="Modelo de Caja" width="550" height="">
+                    <a href="https://www.creatuwebnicaragua.com/modelo-de-cajas/" target="_blank" rel="noopener noreferrer"><figcaption>Fuente: https://www.creatuwebnicaragua.com/modelo-de-cajas/</figcaption></a>
+                </figure>
+
+                <h4 class="referencias">Referencias</h4>
+
+                <p class="parrafo_1"></p>
+                    <ul class="lista_1">
+                        <li>Creatuwebnicaragua (2015). <i>Modelo de cajas en CSS (Introducción a CSS).</i> creatuwebnicaragua.com/ 
+                            [Sitio web]. Recuperado de: <a href="https://www.creatuwebnicaragua.com/modelo-de-cajas/" target="_blank" rel="noopener noreferrer"><u>https://www.creatuwebnicaragua.com/modelo-de-cajas/</u></a>
+                        </li>                         
+                        <li>Geeksforgeeks (s.f). <i>CSS | Box model.</i> geeksforgeeks.org [Sitio web]. Recuperado de: 
+                            <a href="https://www.geeksforgeeks.org/css-box-model/" target="_blank" rel="noopener noreferrer"><u>https://www.geeksforgeeks.org/css-box-model/</u></a>
+                        </li>                        
+                        <li>
+                            W3schools (s.f). <i>CSS Box Model.</i> w3schools.com [Sitio web]. Recuperado de: 
+                            <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank" rel="noopener noreferrer"><u>https://www.w3schools.com/css/css_boxmodel.asp</u></a>
+                        </li> 
+                    </ul>
+                </p>
+
+                <a href="../lecturas.html"><img class="boton_volver" 
+                    src="../../imagenes/botones/Volver atras/azul_vacio-400x104.png" alt="Volver a lecturas" width="180" height="47">
+                </a>
+            </article>
+        </header>
+    </section>
+    <!-- Fin contenedor -->
+
+    <!-- Twitter Widget -->
+    <aside id="twitter_unad">
+        <a class="twitter-timeline" data-width="" data-height="1000" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>     
+    </aside>
+    <!-- Fin Twitter Widget -->
+
+    <footer>
+        <p class="pie_pagina">2019 © Universidad Nacional Abierta y a Distancia <br> UNAD</p>      
+    </footer>
+</body>
+</html>
