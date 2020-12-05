@@ -1,0 +1,265 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Reset_START */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, 
+center, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: ;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset_END */
+
+
+/* Configuraciones generales */
+body{
+	background: #aeddf1;
+}
+
+h1{
+	display: inline-block;
+	background-color: #ffffff;
+	padding-left: 1.5%;
+	float: left;
+}
+
+h1 img{
+	float: left;
+}
+
+h2{
+	color: #000000;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 4em;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 18px;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-shadow:#004080 3px 3px 8px;
+	background: #ffffff;
+}
+
+footer{
+	display: inline-block;
+	color: #ffffff;
+	background: #000000;
+	width: 100%;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1em;
+	text-align: center;
+	margin-top: 10px;
+}
+
+a{
+	word-break: break-all;
+}
+
+#logo{
+    display: inline-block;
+    margin-left: 1.8%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform 1s ease-in-out 0.2s;
+}
+
+#logo:hover{
+    transform:scale(1.2);
+	box-shadow:none;
+}
+
+#menu{
+    background-color: #333333;
+	width: 100%;
+}
+
+#menu ul li{
+    display: inline-block;
+}
+
+#menu ul li a{
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+	padding: 20px;
+}
+
+#menu ul li a:hover{
+	color: #3a3a00;
+    background-color: #a9aaa1;
+}
+
+#contenedor{
+	display: inline-block;
+	width: 80%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+#contenedor code{
+	color: #0000b9;
+	font-weight: bold;
+}
+
+#twitter_unad{
+	display: inline-block;
+	width: 17%;
+	float: right;
+}
+
+.boton_volver{
+	margin-top: 50px;
+}
+
+.subtitulo_1{
+	color: #000000;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.subtitulo_1_centro{
+	color: #000000;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+.subtitulo_2{
+	color: #000000;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.subtitulo_2_centro{
+	color: #000000;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.parrafo_1{
+	text-align: left;
+	line-height: 25px;
+	font-size: 1em;
+	padding-top: 16px;
+	padding-bottom: 0px;
+}
+
+.img_izquierda{
+	float: left;
+	margin: 15px;
+}
+
+.img_derecha{
+	float: right;
+	margin: 15px;
+}
+
+.lista_1{
+	margin-left: 15px;
+	line-height: 30px;
+}
+
+.referencias{
+	font-size: larger;
+	font-weight: bolder;
+	padding-top: 80px;
+	border-bottom: 1px dashed #666666;
+}
+
+.pie_pagina{
+	text-align: center;
+	line-height: 30px;
+}
+
+.black{
+	color: #000000;
+}
+
+.white{
+	color: #ffffff;
+}
+
+.red{
+	color: #ff0000;
+}
+
+.green{
+	color: #00ff00;
+}
+
+.blue{
+	color: #0000ff;
+}
+
+.dark_red{
+	color: #8b0000;
+}
+
+@media(max-width: 1800px){
+}
+
+@media(max-width: 800px){
+	footer{
+		background: #400000;
+		margin-top: 0px;
+	}
+	#menu ul li a{
+		padding: 4px;
+	}
+	#contenedor{
+		width: 90%;
+		max-width: 100%;
+	}
+	#contenedor img{
+		max-width: 100%;
+		max-height: 100%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#twitter_unad{
+		width: 100%;
+	}
+}
